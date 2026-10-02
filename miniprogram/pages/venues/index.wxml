@@ -1,0 +1,1 @@
+<view class="visual-page venues-page"><view class="title">场馆</view><view class="subtitle">2 个场馆 · 18 个场位 · 未来 7 天可预约</view><view wx:if="{{loadError}}" class="error" bindtap="load">{{loadError}} · 点击重试</view><venue-card wx:for="{{venues}}" wx:key="id" venue="{{item}}" bind:select="open"/></view>

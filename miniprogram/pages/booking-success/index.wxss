@@ -1,0 +1,3 @@
+.success-header{text-align:center;padding:35rpx 0 48rpx}.success-mark{width:116rpx;height:116rpx;background:#e4f3ff;color:#2189e9;border-radius:50%;line-height:116rpx;font-size:65rpx;margin:0 auto 28rpx}
+
+.success-header{padding:18rpx 0 30rpx}.small{word-break:break-all}

@@ -1,0 +1,16 @@
+<view class="page code-page">
+  <view class="code-card">
+    <block wx:if="{{reservation}}">
+      <view class="code-title">{{reservation.venueName}} · {{reservation.courtNumber}}号{{reservation.unit}}</view>
+      <view class="code-date">{{reservation.date}}</view>
+      <view class="code-time">{{reservation.timeSlot}}</view>
+    </block>
+    <block wx:if="{{phase==='ready' && image}}">
+      <image class="qr-image" src="{{image}}" mode="widthFix" show-menu-by-longpress="{{false}}" binderror="imageFailed" aria-label="预约核销二维码"/>
+      <view class="code-status">待核销</view>
+      <view class="code-expiry">{{remaining}} 秒后刷新</view>
+    </block>
+    <view wx:else class="code-feedback"><view>{{message}}</view><button wx:if="{{phase==='invalid'}}" class="secondary" bindtap="load">重新获取</button></view>
+
+  </view>
+</view>

@@ -1,0 +1,1 @@
+<view class="visual-page orders-page"><image src="/assets/icons/receipt-text.png"/><view class="section-title">暂无订单</view><view class="muted">预约记录可在「我的预约」中查看</view><button class="secondary" bindtap="browse">去看看场馆</button></view>

@@ -1,0 +1,1 @@
+@import '../../styles/visual.wxss';.orders-page{text-align:center;padding-top:170rpx}.orders-page image{width:94rpx;height:94rpx;opacity:.6;margin-bottom:30rpx}.orders-page .muted{margin:18rpx 0 48rpx}

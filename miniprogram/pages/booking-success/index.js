@@ -1,0 +1,3 @@
+const flow=require('../../utils/auth-flow');
+const r=require('../../services/reservation-service');const {error}=require('../../utils/ui');
+Page({data:{reservation:null,loadError:''},onLoad(o){this.id=o.id;},async onShow(){this.setData({reservation:null});if(!await flow.guard('/pages/booking-success/index?id='+encodeURIComponent(this.id)))return;try{this.setData({reservation:await r.get(this.id)});}catch(e){this.setData({loadError:e.message});error(e);}},onHide(){this.setData({reservation:null});},code(){if(this.data.reservation)wx.navigateTo({url:"/pages/redemption-code/index?reservationId="+encodeURIComponent(this.data.reservation.id)});},my(){wx.switchTab({url:'/pages/reservations/index'});},more(){wx.switchTab({url:'/pages/venues/index'});}});

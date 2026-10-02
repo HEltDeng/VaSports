@@ -1,0 +1,4 @@
+const venues=require('../../services/venue-service'), reservations=require('../../services/reservation-service');
+const auth=require('../../services/auth-service');
+const {dateKey}=require('../../utils/date'); const {error}=require('../../utils/ui');
+Page({data:{venues:[],recent:null,total:0,loadError:''},onShow(){this.setData({recent:null});this.load();},onHide(){this.setData({recent:null});},async load(){try{const user=await auth.current();const [v,r]=await Promise.all([venues.list(dateKey(new Date())),user?.ready?reservations.list():Promise.resolve([])]);this.setData({venues:v,recent:r.find(x=>x.displayState==='ACTIVE')||null,total:v.reduce((n,x)=>n+x.free,0),loadError:''});}catch(e){this.setData({loadError:e.message});error(e);}},openVenue(e){wx.navigateTo({url:'/pages/venue-detail/index?venueId='+e.detail.id});},quick(){wx.switchTab({url:'/pages/venues/index'});},my(){wx.switchTab({url:'/pages/reservations/index'});}});

@@ -1,0 +1,1 @@
+@import '../../styles/visual.wxss';.venues-page{padding-top:44rpx}.venues-page .title{font-size:60rpx;margin:0 0 14rpx}.venues-page .subtitle{font-size:28rpx;color:#7588a6;margin-bottom:42rpx}

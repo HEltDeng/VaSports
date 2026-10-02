@@ -1,0 +1,1 @@
+.legend{display:flex;justify-content:space-between;font-size:20rpx;color:#9da8b5;margin:0 0 22rpx}.legend text:first-child{color:#398cce}

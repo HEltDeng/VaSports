@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "场馆",
+  "usingComponents": {
+    "venue-card": "/components/venue-card/index"
+  }
+}

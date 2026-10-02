@@ -1,0 +1,9 @@
+{
+  "desc": "VaSports local demo; no search indexing.",
+  "rules": [
+    {
+      "action": "disallow",
+      "page": "*"
+    }
+  ]
+}

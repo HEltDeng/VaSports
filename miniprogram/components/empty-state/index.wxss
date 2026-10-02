@@ -1,0 +1,1 @@
+.empty{text-align:center;padding:50rpx 30rpx;background:#fff;border-radius:26rpx}.empty-symbol{height:80rpx;width:80rpx;border-radius:25rpx;background:#edf6ff;color:#8ebfe7;font-size:44rpx;line-height:80rpx;margin:0 auto 22rpx}.empty-title{font-size:29rpx;font-weight:600}.empty-desc{font-size:24rpx;color:#94a2b2;margin-top:14rpx;line-height:1.8}

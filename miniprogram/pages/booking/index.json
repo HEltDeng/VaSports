@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "选择时段",
+  "usingComponents": {
+    "time-slot": "/components/time-slot/index"
+  }
+}

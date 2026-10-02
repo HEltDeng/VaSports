@@ -1,0 +1,1 @@
+<view class="slot {{timeInfo.status}} {{selected?'selected':''}}" bindtap="choose" role="button" aria-label="{{timeInfo.timeSlot}} {{timeInfo.label}}"><text class="slot-text slot-time">{{timeInfo.timeSlot}}</text><text class="slot-text slot-state">{{selected?'已选择':timeInfo.label}}</text></view>

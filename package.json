@@ -1,0 +1,10 @@
+{
+  "name": "vasports-miniprogram",
+  "version": "0.1.0",
+  "private": true,
+  "description": "VaSports native WeChat mini program demo",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "check": "node tools/check.js"
+  }
+}

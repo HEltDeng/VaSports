@@ -1,0 +1,2 @@
+const venues=require('../../services/venue-service');const {dateKey}=require('../../utils/date');const {error}=require('../../utils/ui');
+Page({data:{venues:[],loadError:''},onShow(){this.load();},async load(){try{this.setData({venues:await venues.list(dateKey(new Date())),loadError:''});}catch(e){this.setData({loadError:e.message});error(e);}},open(e){wx.navigateTo({url:'/pages/venue-detail/index?venueId='+e.detail.id});}});

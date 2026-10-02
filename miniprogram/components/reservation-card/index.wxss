@@ -1,0 +1,5 @@
+.reservation-court{font-size:30rpx;margin-top:20rpx;font-weight:500}.reservation-time{font-size:25rpx;color:#768a9f;margin-top:7rpx}.reservation-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:25rpx;padding-top:20rpx;border-top:1rpx solid #f0f4f8;color:#9aa8b7;font-size:21rpx}.cancel{font-size:23rpx;line-height:58rpx;height:58rpx;padding:0 22rpx;margin:0;background:#f1f5f9;color:#6c8197;border-radius:14rpx}.CANCELLED,.COMPLETED{background:#f0f3f7;color:#8999a9}
+
+.cancel{width:auto!important;min-width:150rpx;flex-shrink:0}
+
+.reservation-bottom{justify-content:flex-end;gap:16rpx;margin-top:20rpx;padding-top:18rpx}.cancel,.code-button{width:auto!important;min-width:140rpx;height:64rpx;line-height:64rpx;margin:0!important;padding:0 22rpx;font-size:24rpx;border-radius:14rpx}.code-button{background:#2189e9;color:#fff}

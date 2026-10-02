@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "维阿斯场馆预约",
+  "usingComponents": {
+    "venue-card": "/components/venue-card/index",
+    "empty-state": "/components/empty-state/index"
+  }
+}

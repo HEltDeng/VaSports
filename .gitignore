@@ -1,0 +1,22 @@
+node_modules/
+project.private.config.json
+*.log
+.env*
+*.pem
+*.key
+*.p12
+*.jks
+05_Output/
+__pycache__/
+
+# Unused official samples and one-off generators
+cloudfunctions/
+uploadCloudFunction.sh
+miniprogram/pages/index/
+miniprogram/pages/example/
+miniprogram/components/cloudTipModal/
+miniprogram/images/
+miniprogram/envList.js
+tools/build-demo.py
+tools/render-icons.cjs
+tools/optimize-visual-assets.cjs

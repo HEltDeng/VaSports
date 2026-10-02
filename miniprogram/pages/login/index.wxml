@@ -1,0 +1,6 @@
+<view class="visual-page login-page"><image class="login-backdrop" src="/assets/login-backdrop.png" mode="scaleToFill"/>
+ <view class="login-brand"><image class="brand-logo" src="/assets/brand-logo.png"/><view class="brand">VaSports</view><view class="product-name">维阿斯场馆预约</view><view class="tagline">— 让运动更简单 —</view></view>
+ <view class="login-actions"><view wx:if="{{message}}" class="error">{{message}}</view><button class="primary login-button" loading="{{busy}}" disabled="{{busy}}" bindtap="login">微信登录</button><button class="secondary browse-button" bindtap="browse">先看看场馆</button></view>
+ <view class="agreement"><checkbox-group bindchange="agree"><label><checkbox class="agreement-check" value="yes" checked="{{agreed}}" color="#16b469"/>我已阅读并同意</label></checkbox-group><text class="link" bindtap="agreement">用户协议</text><text>及</text><text class="link" bindtap="privacy">隐私说明</text></view>
+ <view wx:if="{{demo}}" class="switch-account" bindtap="switchAccount">—　切换账号　—</view>
+</view>

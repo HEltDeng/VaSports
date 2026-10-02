@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/home/index",
+    "pages/venues/index",
+    "pages/venue-detail/index",
+    "pages/booking/index",
+    "pages/booking-confirm/index",
+    "pages/booking-success/index",
+    "pages/reservations/index",
+    "pages/profile/index",
+    "pages/redemption-code/index",
+    "pages/bind-phone/index",
+    "pages/identity-select/index",
+    "pages/student-verification/index",
+    "pages/visitor-profile/index",
+    "pages/user-detail/index",
+    "pages/orders/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "维阿斯场馆预约",
+    "navigationBarBackgroundColor": "#f5faff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f5faff"
+  },
+  "tabBar": {
+    "color": "#8794a5",
+    "selectedColor": "#1677ff",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "assets/tab-home.png",
+        "selectedIconPath": "assets/tab-home-active.png"
+      },
+      {
+        "pagePath": "pages/venues/index",
+        "text": "场馆",
+        "iconPath": "assets/tab-venues.png",
+        "selectedIconPath": "assets/tab-venues-active.png"
+      },
+      {
+        "pagePath": "pages/reservations/index",
+        "text": "我的预约",
+        "iconPath": "assets/tab-reservations.png",
+        "selectedIconPath": "assets/tab-reservations-active.png"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的",
+        "iconPath": "assets/tab-profile.png",
+        "selectedIconPath": "assets/tab-profile-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
